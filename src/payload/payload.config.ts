@@ -41,7 +41,7 @@ dotenv.config({
 
 export default buildConfig({
   admin: {
-    css: path.resolve(__dirname, '../tailwind.css'),
+    css: path.resolve(__dirname, '../../tailwind.css'),
     user: Users.slug,
     bundler: webpackBundler(),
     components: {
