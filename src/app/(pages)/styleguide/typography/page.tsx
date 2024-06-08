@@ -10,11 +10,11 @@ export default async function Typography() {
   return (
     <Gutter>
       <p>
-        <Link href="/styleguide">Styleguide</Link>
+        <Link href='/styleguide'>Styleguide</Link>
         {' / '}
         <span>Typography</span>
       </p>
-      <VerticalPadding bottom="large" top="none">
+      <VerticalPadding bottom='large' top='none'>
         <h1>Typography</h1>
         <h1>H1: Lorem ipsum dolor sit amet officia deserunt.</h1>
         <h2>H2: Lorem ipsum dolor sit amet in culpa qui officia deserunt consectetur.</h2>

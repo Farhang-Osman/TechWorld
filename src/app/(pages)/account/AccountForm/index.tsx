@@ -98,7 +98,7 @@ const AccountForm: React.FC = () => {
           <p>
             {'Change your account details below, or '}
             <button
-              type="button"
+              type='button'
               className={classes.changePassword}
               onClick={() => setChangePassword(!changePassword)}
             >
@@ -107,21 +107,21 @@ const AccountForm: React.FC = () => {
             {' to change your password.'}
           </p>
           <Input
-            name="email"
-            label="Email Address"
+            name='email'
+            label='Email Address'
             required
             register={register}
             error={errors.email}
-            type="email"
+            type='email'
           />
-          <Input name="name" label="Name" register={register} error={errors.name} />
+          <Input name='name' label='Name' register={register} error={errors.name} />
         </Fragment>
       ) : (
         <Fragment>
           <p>
             {'Change your password below, or '}
             <button
-              type="button"
+              type='button'
               className={classes.changePassword}
               onClick={() => setChangePassword(!changePassword)}
             >
@@ -130,17 +130,17 @@ const AccountForm: React.FC = () => {
             .
           </p>
           <Input
-            name="password"
-            type="password"
-            label="Password"
+            name='password'
+            type='password'
+            label='Password'
             required
             register={register}
             error={errors.password}
           />
           <Input
-            name="passwordConfirm"
-            type="password"
-            label="Confirm Password"
+            name='passwordConfirm'
+            type='password'
+            label='Confirm Password'
             required
             register={register}
             validate={value => value === password.current || 'The passwords do not match'}
@@ -149,10 +149,10 @@ const AccountForm: React.FC = () => {
         </Fragment>
       )}
       <Button
-        type="submit"
+        type='submit'
         label={isLoading ? 'Processing' : changePassword ? 'Change Password' : 'Update Account'}
         disabled={isLoading}
-        appearance="primary"
+        appearance='primary'
         className={classes.submit}
       />
     </form>

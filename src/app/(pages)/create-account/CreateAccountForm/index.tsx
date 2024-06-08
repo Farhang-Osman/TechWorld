@@ -75,40 +75,40 @@ const CreateAccountForm: React.FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
       <p>
         {`This is where new customers can signup and create a new account. To manage all users, `}
-        <Link href="/admin/collections/users">login to the admin dashboard</Link>
+        <Link href='/admin/collections/users'>login to the admin dashboard</Link>
         {'.'}
       </p>
       <Message error={error} className={classes.message} />
       <Input
-        name="email"
-        label="Email Address"
+        name='email'
+        label='Email Address'
         required
         register={register}
         error={errors.email}
-        type="email"
+        type='email'
       />
       <Input
-        name="password"
-        type="password"
-        label="Password"
+        name='password'
+        type='password'
+        label='Password'
         required
         register={register}
         error={errors.password}
       />
       <Input
-        name="passwordConfirm"
-        type="password"
-        label="Confirm Password"
+        name='passwordConfirm'
+        type='password'
+        label='Confirm Password'
         required
         register={register}
         validate={value => value === password.current || 'The passwords do not match'}
         error={errors.passwordConfirm}
       />
       <Button
-        type="submit"
+        type='submit'
         label={loading ? 'Processing' : 'Create Account'}
         disabled={loading}
-        appearance="primary"
+        appearance='primary'
         className={classes.submit}
       />
       <div>

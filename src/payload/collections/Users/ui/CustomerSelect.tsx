@@ -70,20 +70,20 @@ export const CustomerSelect: React.FC<TextField> = props => {
           href={`https://dashboard.stripe.com/${
             process.env.PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY ? 'test/' : ''
           }customers/create`}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
           style={{ color: 'var(--theme-text' }}
         >
           create a new one
         </a>
         {'.'}
       </p>
-      <Select {...props} label="" options={options} />
+      <Select {...props} label='' options={options} />
       {Boolean(stripeCustomerID) && (
         <div>
           <div>
             <span
-              className="label"
+              className='label'
               style={{
                 color: '#9A9A9A',
               }}
@@ -105,8 +105,8 @@ export const CustomerSelect: React.FC<TextField> = props => {
               href={`https://dashboard.stripe.com/${
                 process.env.PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY ? 'test/' : ''
               }customers/${stripeCustomerID}`}
-              target="_blank"
-              rel="noreferrer noopener"
+              target='_blank'
+              rel='noreferrer noopener'
             >
               {href}
             </a>

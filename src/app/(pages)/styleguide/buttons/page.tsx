@@ -13,19 +13,19 @@ export default async function ButtonsPage() {
     <Fragment>
       <Gutter>
         <p>
-          <Link href="/styleguide">Styleguide</Link>
+          <Link href='/styleguide'>Styleguide</Link>
           {' / '}
           <span>Buttons</span>
         </p>
         <h1>Buttons</h1>
       </Gutter>
       <Gutter>
-        <VerticalPadding bottom="large" top="none">
-          <Button label="Default Button" appearance="default" />
+        <VerticalPadding bottom='large' top='none'>
+          <Button label='Default Button' appearance='default' />
           <br /> <br />
-          <Button label="Primary Button" appearance="primary" />
+          <Button label='Primary Button' appearance='primary' />
           <br /> <br />
-          <Button label="Secondary Button" appearance="secondary" />
+          <Button label='Secondary Button' appearance='secondary' />
         </VerticalPadding>
       </Gutter>
     </Fragment>

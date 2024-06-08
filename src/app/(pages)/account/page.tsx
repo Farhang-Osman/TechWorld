@@ -26,7 +26,7 @@ export default async function Account() {
         <RenderParams className={classes.params} />
       </Gutter>
       <LowImpactHero
-        type="lowImpact"
+        type='lowImpact'
         media={null}
         richText={[
           {
@@ -94,12 +94,12 @@ export default async function Account() {
         </p>
         <Button
           className={classes.ordersButton}
-          href="/orders"
-          appearance="primary"
-          label="View orders"
+          href='/orders'
+          appearance='primary'
+          label='View orders'
         />
         <HR />
-        <Button href="/logout" appearance="secondary" label="Log out" />
+        <Button href='/logout' appearance='secondary' label='Log out' />
       </Gutter>
     </Fragment>
   )

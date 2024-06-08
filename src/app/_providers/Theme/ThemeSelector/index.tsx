@@ -33,16 +33,16 @@ export const ThemeSelector: React.FC = () => {
 
   return (
     <div className={[classes.selectContainer, !show && classes.hidden].filter(Boolean).join(' ')}>
-      <label htmlFor="theme">
+      <label htmlFor='theme'>
         <select
-          id="theme"
+          id='theme'
           onChange={e => onThemeChange(e.target.value as Theme & 'auto')}
           ref={selectRef}
           className={classes.select}
         >
-          <option value="auto">Auto</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
+          <option value='auto'>Auto</option>
+          <option value='light'>Light</option>
+          <option value='dark'>Dark</option>
         </select>
         <div className={classes.selectIcon}>
           <Chevron className={classes.iconUp} />

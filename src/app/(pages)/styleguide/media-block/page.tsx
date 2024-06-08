@@ -13,20 +13,20 @@ export default async function MediaBlockPage() {
     <Fragment>
       <Gutter>
         <p>
-          <Link href="/styleguide">Styleguide</Link>
+          <Link href='/styleguide'>Styleguide</Link>
           {' / '}
           <span>Media Block</span>
         </p>
         <h1>Media Block</h1>
       </Gutter>
-      <VerticalPadding bottom="large" top="none">
-        <MediaBlock position="default" blockType="mediaBlock" media="" staticImage={staticImage} />
+      <VerticalPadding bottom='large' top='none'>
+        <MediaBlock position='default' blockType='mediaBlock' media='' staticImage={staticImage} />
         <br />
         <br />
         <MediaBlock
-          position="fullscreen"
-          blockType="mediaBlock"
-          media=""
+          position='fullscreen'
+          blockType='mediaBlock'
+          media=''
           staticImage={staticImage}
         />
       </VerticalPadding>

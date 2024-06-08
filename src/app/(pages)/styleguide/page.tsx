@@ -9,21 +9,21 @@ import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 export default async function Typography() {
   return (
     <Gutter>
-      <VerticalPadding bottom="large" top="none">
+      <VerticalPadding bottom='large' top='none'>
         <h1>Styleguide</h1>
-        <Link href="/styleguide/typography">Typography</Link>
+        <Link href='/styleguide/typography'>Typography</Link>
         <br />
         <h2>Blocks</h2>
-        <Link href="/styleguide/content-block">Content Block</Link>
+        <Link href='/styleguide/content-block'>Content Block</Link>
         <br />
-        <Link href="/styleguide/media-block">Media Block</Link>
+        <Link href='/styleguide/media-block'>Media Block</Link>
         <br />
-        <Link href="/styleguide/call-to-action">Call To Action Block</Link>
+        <Link href='/styleguide/call-to-action'>Call To Action Block</Link>
         <br />
         <h2>Components</h2>
-        <Link href="/styleguide/buttons">Buttons</Link>
+        <Link href='/styleguide/buttons'>Buttons</Link>
         <br />
-        <Link href="/styleguide/message">Message</Link>
+        <Link href='/styleguide/message'>Message</Link>
       </VerticalPadding>
     </Gutter>
   )

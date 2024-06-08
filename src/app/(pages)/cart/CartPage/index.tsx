@@ -116,7 +116,7 @@ export const CartPage: React.FC<{
                             <label>
                               Quantity &nbsp;
                               <input
-                                type="number"
+                                type='number'
                                 className={classes.quantity}
                                 // fallback to empty string to avoid uncontrolled input error
                                 // this allows the user to user their backspace key to clear the input
@@ -146,7 +146,7 @@ export const CartPage: React.FC<{
                 className={classes.checkoutButton}
                 href={user ? '/checkout' : '/login?redirect=%2Fcheckout'}
                 label={user ? 'Checkout' : 'Login to checkout'}
-                appearance="primary"
+                appearance='primary'
               />
             </div>
           )}

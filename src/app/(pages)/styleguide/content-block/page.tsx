@@ -12,15 +12,15 @@ export default async function ContentBlockPage() {
     <Fragment>
       <Gutter>
         <p>
-          <Link href="/styleguide">Styleguide</Link>
+          <Link href='/styleguide'>Styleguide</Link>
           {' / '}
           <span>Content Block</span>
         </p>
         <h1>Content Block</h1>
       </Gutter>
-      <VerticalPadding bottom="large" top="none">
+      <VerticalPadding bottom='large' top='none'>
         <ContentBlock
-          blockType="content"
+          blockType='content'
           columns={[
             {
               size: 'full',

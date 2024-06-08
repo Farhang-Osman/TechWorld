@@ -66,17 +66,17 @@ export default async function Cart() {
               <Fragment>
                 {'To enable checkout, you must '}
                 <a
-                  href="https://dashboard.stripe.com/test/apikeys"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://dashboard.stripe.com/test/apikeys'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   {'obtain your Stripe API Keys'}
                 </a>
                 {' then set them as environment variables. See the '}
                 <a
-                  href="https://github.com/payloadcms/payload/blob/main/templates/ecommerce/README.md#stripe"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://github.com/payloadcms/payload/blob/main/templates/ecommerce/README.md#stripe'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   {'README'}
                 </a>

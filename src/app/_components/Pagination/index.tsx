@@ -17,7 +17,7 @@ export const Pagination: React.FC<{
   return (
     <div className={[classes.pagination, className].filter(Boolean).join(' ')}>
       <button
-        type="button"
+        type='button'
         className={classes.button}
         disabled={!hasPrevPage}
         onClick={() => {
@@ -32,7 +32,7 @@ export const Pagination: React.FC<{
         </span>
       </div>
       <button
-        type="button"
+        type='button'
         className={classes.button}
         disabled={!hasNextPage}
         onClick={() => {

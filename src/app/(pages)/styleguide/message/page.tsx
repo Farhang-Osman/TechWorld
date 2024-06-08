@@ -12,21 +12,21 @@ export default async function MessageComponentPage() {
     <Fragment>
       <Gutter>
         <p>
-          <Link href="/styleguide">Styleguide</Link>
+          <Link href='/styleguide'>Styleguide</Link>
           {' / '}
           <span>Message Component</span>
         </p>
         <h1>Message Component</h1>
       </Gutter>
       <Gutter>
-        <VerticalPadding bottom="large" top="none">
-          <Message message="This is a message" />
+        <VerticalPadding bottom='large' top='none'>
+          <Message message='This is a message' />
           <br />
-          <Message error="This is an error" />
+          <Message error='This is an error' />
           <br />
-          <Message success="This is a success" />
+          <Message success='This is a success' />
           <br />
-          <Message warning="This is a warning" />
+          <Message warning='This is a warning' />
         </VerticalPadding>
       </Gutter>
     </Fragment>

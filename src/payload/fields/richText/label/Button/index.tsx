@@ -8,7 +8,7 @@ import Icon from '../Icon'
 const baseClass = 'rich-text-label-button'
 
 const ToolbarButton: React.FC<{ path: string }> = () => (
-  <ElementButton className={baseClass} format="label">
+  <ElementButton className={baseClass} format='label'>
     <Icon />
   </ElementButton>
 )

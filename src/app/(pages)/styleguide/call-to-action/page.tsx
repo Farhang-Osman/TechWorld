@@ -12,15 +12,15 @@ export default async function CallToActionPage() {
     <Fragment>
       <Gutter>
         <p>
-          <Link href="/styleguide">Styleguide</Link>
+          <Link href='/styleguide'>Styleguide</Link>
           {' / '}
           <span>Call To Action Block</span>
         </p>
         <h1>Call To Action Block</h1>
       </Gutter>
-      <VerticalPadding bottom="large" top="none">
+      <VerticalPadding bottom='large' top='none'>
         <CallToActionBlock
-          blockType="cta"
+          blockType='cta'
           richText={[
             {
               type: 'h4',
@@ -53,7 +53,7 @@ export default async function CallToActionPage() {
         <br />
         <br />
         <CallToActionBlock
-          blockType="cta"
+          blockType='cta'
           invertBackground
           richText={[
             {

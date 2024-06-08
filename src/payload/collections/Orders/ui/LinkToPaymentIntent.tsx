@@ -17,12 +17,12 @@ export const LinkToPaymentIntent: React.FC<TextField> = props => {
       <p style={{ marginBottom: '0' }}>
         {typeof label === 'string' ? label : 'Stripe Payment Intent ID'}
       </p>
-      <Text {...props} label="" />
+      <Text {...props} label='' />
       {Boolean(stripePaymentIntentID) && (
         <div>
           <div>
             <span
-              className="label"
+              className='label'
               style={{
                 color: '#9A9A9A',
               }}
@@ -42,8 +42,8 @@ export const LinkToPaymentIntent: React.FC<TextField> = props => {
               href={`https://dashboard.stripe.com/${
                 process.env.PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY ? 'test/' : ''
               }customers/${stripePaymentIntentID}`}
-              target="_blank"
-              rel="noreferrer noopener"
+              target='_blank'
+              rel='noreferrer noopener'
             >
               {href}
             </a>
