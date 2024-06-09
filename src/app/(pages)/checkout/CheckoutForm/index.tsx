@@ -96,11 +96,18 @@ export const CheckoutForm: React.FC<{}> = () => {
   )
 
   return (
-    <form onSubmit={handleSubmit} className={classes.form}>
+    <form
+      onSubmit={handleSubmit}
+      className={classes.form}
+    >
       {error && <Message error={error} />}
       <PaymentElement />
       <div className={classes.actions}>
-        <Button label='Back to cart' href='/cart' appearance='secondary' />
+        <Button
+          label='Back to cart'
+          href='/cart'
+          appearance='secondary'
+        />
         <Button
           label={isLoading ? 'Loading...' : 'Checkout'}
           type='submit'

@@ -25,9 +25,17 @@ export const ContentBlock: React.FC<
             const { enableLink, richText, link, size } = col
 
             return (
-              <div key={index} className={[classes.column, classes[`column--${size}`]].join(' ')}>
+              <div
+                key={index}
+                className={[classes.column, classes[`column--${size}`]].join(' ')}
+              >
                 <RichText content={richText} />
-                {enableLink && <CMSLink className={classes.link} {...link} />}
+                {enableLink && (
+                  <CMSLink
+                    className={classes.link}
+                    {...link}
+                  />
+                )}
               </div>
             )
           })}

@@ -136,7 +136,11 @@ export const CheckoutPage: React.FC<{
                         </p>
                       )}
                       <h6 className={classes.title}>{title}</h6>
-                      <Price product={product} button={false} quantity={quantity} />
+                      <Price
+                        product={product}
+                        button={false}
+                        quantity={quantity}
+                      />
                     </div>
                   </div>
                   {!isLast && <HR />}
@@ -156,7 +160,11 @@ export const CheckoutPage: React.FC<{
       {!clientSecret && error && (
         <div className={classes.error}>
           <p>{`Error: ${error}`}</p>
-          <Button label='Back to cart' href='/cart' appearance='secondary' />
+          <Button
+            label='Back to cart'
+            href='/cart'
+            appearance='secondary'
+          />
         </div>
       )}
       {clientSecret && (

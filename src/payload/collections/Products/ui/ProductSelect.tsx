@@ -74,7 +74,11 @@ export const ProductSelect: React.FC<TextField> = props => {
         </a>
         {'.'}
       </p>
-      <Select {...props} label='' options={options} />
+      <Select
+        {...props}
+        label=''
+        options={options}
+      />
       {Boolean(stripeProductID) && (
         <div
           style={{

@@ -78,7 +78,11 @@ export const CustomerSelect: React.FC<TextField> = props => {
         </a>
         {'.'}
       </p>
-      <Select {...props} label='' options={options} />
+      <Select
+        {...props}
+        label=''
+        options={options}
+      />
       {Boolean(stripeCustomerID) && (
         <div>
           <div>

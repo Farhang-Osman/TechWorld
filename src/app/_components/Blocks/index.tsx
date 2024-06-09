@@ -62,8 +62,14 @@ export const Blocks: React.FC<{
 
             if (Block) {
               return (
-                <BackgroundColor key={index} invert={blockIsInverted}>
-                  <VerticalPadding top={paddingTop} bottom={paddingBottom}>
+                <BackgroundColor
+                  key={index}
+                  invert={blockIsInverted}
+                >
+                  <VerticalPadding
+                    top={paddingTop}
+                    bottom={paddingBottom}
+                  >
                     <Block
                       // @ts-expect-error
                       id={toKebabCase(blockName)}

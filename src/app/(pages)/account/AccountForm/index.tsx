@@ -91,8 +91,15 @@ const AccountForm: React.FC = () => {
   }, [user, router, reset, changePassword])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-      <Message error={error} success={success} className={classes.message} />
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={classes.form}
+    >
+      <Message
+        error={error}
+        success={success}
+        className={classes.message}
+      />
       {!changePassword ? (
         <Fragment>
           <p>
@@ -114,7 +121,12 @@ const AccountForm: React.FC = () => {
             error={errors.email}
             type='email'
           />
-          <Input name='name' label='Name' register={register} error={errors.name} />
+          <Input
+            name='name'
+            label='Name'
+            register={register}
+            error={errors.name}
+          />
         </Fragment>
       ) : (
         <Fragment>

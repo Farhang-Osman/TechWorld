@@ -65,8 +65,14 @@ export const ResetPasswordForm: React.FC = () => {
   }, [reset, token])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-      <Message error={error} className={classes.message} />
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={classes.form}
+    >
+      <Message
+        error={error}
+        className={classes.message}
+      />
       <Input
         name='password'
         type='password'
@@ -75,7 +81,10 @@ export const ResetPasswordForm: React.FC = () => {
         register={register}
         error={errors.password}
       />
-      <input type='hidden' {...register('token')} />
+      <input
+        type='hidden'
+        {...register('token')}
+      />
       <Button
         type='submit'
         appearance='primary'

@@ -21,7 +21,13 @@ const HeaderComponent = ({ header }: { header: Header }) => {
     >
       <Gutter className='flex flex-wrap items-center justify-between'>
         <Link href={'/'}>
-          <Image src='/logo-black.svg' alt='logo' width={170} height={50} className='' />
+          <Image
+            src='/logo-black.svg'
+            alt='logo'
+            width={170}
+            height={50}
+            className=''
+          />
         </Link>
         <HeaderNav header={header} />
       </Gutter>

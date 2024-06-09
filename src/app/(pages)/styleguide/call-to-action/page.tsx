@@ -18,7 +18,10 @@ export default async function CallToActionPage() {
         </p>
         <h1>Call To Action Block</h1>
       </Gutter>
-      <VerticalPadding bottom='large' top='none'>
+      <VerticalPadding
+        bottom='large'
+        top='none'
+      >
         <CallToActionBlock
           blockType='cta'
           richText={[

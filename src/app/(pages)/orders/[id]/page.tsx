@@ -81,7 +81,10 @@ export default async function Order({ params: { id } }) {
             return (
               <Fragment key={index}>
                 <div className={classes.row}>
-                  <Link href={`/products/${product.slug}`} className={classes.mediaWrapper}>
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className={classes.mediaWrapper}
+                  >
                     {!metaImage && <span className={classes.placeholder}>No image</span>}
                     {metaImage && typeof metaImage !== 'string' && (
                       <Media
@@ -105,12 +108,19 @@ export default async function Order({ params: { id } }) {
                       </p>
                     )}
                     <h5 className={classes.title}>
-                      <Link href={`/products/${product.slug}`} className={classes.titleLink}>
+                      <Link
+                        href={`/products/${product.slug}`}
+                        className={classes.titleLink}
+                      >
                         {title}
                       </Link>
                     </h5>
                     <p>{`Quantity: ${quantity}`}</p>
-                    <Price product={product} button={false} quantity={quantity} />
+                    <Price
+                      product={product}
+                      button={false}
+                      quantity={quantity}
+                    />
                   </div>
                 </div>
                 {!isLast && <HR />}
@@ -123,8 +133,16 @@ export default async function Order({ params: { id } }) {
       </div>
       <HR />
       <div className={classes.actions}>
-        <Button href='/orders' appearance='primary' label='See all orders' />
-        <Button href='/account' appearance='secondary' label='Go to account' />
+        <Button
+          href='/orders'
+          appearance='primary'
+          label='See all orders'
+        />
+        <Button
+          href='/account'
+          appearance='secondary'
+          label='Go to account'
+        />
       </div>
     </Gutter>
   )

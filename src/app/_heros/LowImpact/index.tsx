@@ -12,7 +12,10 @@ export const LowImpactHero: React.FC<Page['hero']> = ({ richText }) => {
     <Gutter className={classes.lowImpactHero}>
       <div className={classes.content}>
         <VerticalPadding>
-          <RichText className={classes.richText} content={richText} />
+          <RichText
+            className={classes.richText}
+            content={richText}
+          />
         </VerticalPadding>
       </div>
     </Gutter>

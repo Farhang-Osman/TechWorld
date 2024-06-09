@@ -58,8 +58,14 @@ export const RecoverPasswordForm: React.FC = () => {
               <Link href='/admin/collections/users'>login to the admin dashboard</Link>
               {'.'}
             </p>
-            <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-              <Message error={error} className={classes.message} />
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className={classes.form}
+            >
+              <Message
+                error={error}
+                className={classes.message}
+              />
               <Input
                 name='email'
                 label='Email Address'

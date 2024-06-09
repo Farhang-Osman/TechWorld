@@ -166,7 +166,10 @@ export const CollectionArchive: React.FC<Props> = props => {
 
   return (
     <div className={[classes.collectionArchive, className].filter(Boolean).join(' ')}>
-      <div className={classes.scrollRef} ref={scrollRef} />
+      <div
+        className={classes.scrollRef}
+        ref={scrollRef}
+      />
       {!isLoading && error && <Gutter>{error}</Gutter>}
       <Fragment>
         {showPageRange !== false && populateBy !== 'selection' && (
@@ -186,8 +189,15 @@ export const CollectionArchive: React.FC<Props> = props => {
             {results.docs?.map((result, index) => {
               if (typeof result === 'object' && result !== null) {
                 return (
-                  <div className={classes.column} key={index}>
-                    <Card doc={result} relationTo={relationTo} showCategories />
+                  <div
+                    className={classes.column}
+                    key={index}
+                  >
+                    <Card
+                      doc={result}
+                      relationTo={relationTo}
+                      showCategories
+                    />
                   </div>
                 )
               }

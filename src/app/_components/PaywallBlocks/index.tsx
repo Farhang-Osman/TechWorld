@@ -79,7 +79,10 @@ export const PaywallBlocks: React.FC<{
   if (user === null) {
     return (
       <Gutter>
-        <VerticalPadding bottom='large' top='none'>
+        <VerticalPadding
+          bottom='large'
+          top='none'
+        >
           <Message
             message={
               <>
@@ -99,7 +102,10 @@ export const PaywallBlocks: React.FC<{
   if (isLoading) {
     return (
       <Gutter>
-        <VerticalPadding bottom='large' top='none'>
+        <VerticalPadding
+          bottom='large'
+          top='none'
+        >
           <LoadingShimmer />
         </VerticalPadding>
       </Gutter>
@@ -109,12 +115,20 @@ export const PaywallBlocks: React.FC<{
   if (!blocks || blocks.length === 0) {
     return (
       <Gutter>
-        <VerticalPadding bottom='large' top='none'>
+        <VerticalPadding
+          bottom='large'
+          top='none'
+        >
           <Message message='Purchase this product to unlock the content.' />
         </VerticalPadding>
       </Gutter>
     )
   }
 
-  return <Blocks blocks={blocks} disableTopPadding={disableTopPadding} />
+  return (
+    <Blocks
+      blocks={blocks}
+      disableTopPadding={disableTopPadding}
+    />
+  )
 }

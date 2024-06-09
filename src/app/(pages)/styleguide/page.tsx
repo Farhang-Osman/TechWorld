@@ -9,7 +9,10 @@ import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 export default async function Typography() {
   return (
     <Gutter>
-      <VerticalPadding bottom='large' top='none'>
+      <VerticalPadding
+        bottom='large'
+        top='none'
+      >
         <h1>Styleguide</h1>
         <Link href='/styleguide/typography'>Typography</Link>
         <br />

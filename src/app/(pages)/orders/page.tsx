@@ -56,8 +56,14 @@ export default async function Orders() {
       {orders && orders.length > 0 && (
         <ul className={classes.ordersList}>
           {orders?.map((order, index) => (
-            <li key={order.id} className={classes.listItem}>
-              <Link className={classes.item} href={`/orders/${order.id}`}>
+            <li
+              key={order.id}
+              className={classes.listItem}
+            >
+              <Link
+                className={classes.item}
+                href={`/orders/${order.id}`}
+              >
                 <div className={classes.itemContent}>
                   <h4 className={classes.itemTitle}>{`Order ${order.id}`}</h4>
                   <div className={classes.itemMeta}>
@@ -84,7 +90,11 @@ export default async function Orders() {
         </ul>
       )}
       <HR />
-      <Button href='/account' appearance='primary' label='Go to account' />
+      <Button
+        href='/account'
+        appearance='primary'
+        label='Go to account'
+      />
     </Gutter>
   )
 }

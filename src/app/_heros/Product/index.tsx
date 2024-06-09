@@ -74,18 +74,31 @@ export const ProductHero: React.FC<{
               {'.'}
             </p>
           </div>
-          <Price product={product} button={false} />
-          <AddToCartButton product={product} className={classes.addToCartButton} />
+          <Price
+            product={product}
+            button={false}
+          />
+          <AddToCartButton
+            product={product}
+            className={classes.addToCartButton}
+          />
         </div>
         <div className={classes.media}>
           <div className={classes.mediaWrapper}>
             {!metaImage && <div className={classes.placeholder}>No image</div>}
             {metaImage && typeof metaImage !== 'string' && (
-              <Media imgClassName={classes.image} resource={metaImage} fill />
+              <Media
+                imgClassName={classes.image}
+                resource={metaImage}
+                fill
+              />
             )}
           </div>
           {metaImage && typeof metaImage !== 'string' && metaImage?.caption && (
-            <RichText content={metaImage.caption} className={classes.caption} />
+            <RichText
+              content={metaImage.caption}
+              className={classes.caption}
+            />
           )}
         </div>
       </Gutter>

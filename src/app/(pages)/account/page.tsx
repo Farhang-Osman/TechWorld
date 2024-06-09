@@ -70,7 +70,10 @@ export default async function Account() {
             <ul className={classes.purchases}>
               {user?.purchases?.map((purchase, index) => {
                 return (
-                  <li key={index} className={classes.purchase}>
+                  <li
+                    key={index}
+                    className={classes.purchase}
+                  >
                     {typeof purchase === 'string' ? (
                       <p>{purchase}</p>
                     ) : (
@@ -99,7 +102,11 @@ export default async function Account() {
           label='View orders'
         />
         <HR />
-        <Button href='/logout' appearance='secondary' label='Log out' />
+        <Button
+          href='/logout'
+          appearance='secondary'
+          label='Log out'
+        />
       </Gutter>
     </Fragment>
   )

@@ -13,7 +13,10 @@ export const BackgroundColor: React.FC<Props> = props => {
   const { id, className, children, invert } = props
 
   return (
-    <div id={id} className={[invert && classes.invert, className].filter(Boolean).join(' ')}>
+    <div
+      id={id}
+      className={[invert && classes.invert, className].filter(Boolean).join(' ')}
+    >
       {children}
     </div>
   )

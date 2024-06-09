@@ -24,7 +24,10 @@ export const Pagination: React.FC<{
           onClick(page - 1)
         }}
       >
-        <Chevron rotate={90} className={classes.icon} />
+        <Chevron
+          rotate={90}
+          className={classes.icon}
+        />
       </button>
       <div className={classes.pageRange}>
         <span className={classes.pageRangeLabel}>
@@ -39,7 +42,10 @@ export const Pagination: React.FC<{
           onClick(page + 1)
         }}
       >
-        <Chevron rotate={-90} className={classes.icon} />
+        <Chevron
+          rotate={-90}
+          className={classes.icon}
+        />
       </button>
     </div>
   )

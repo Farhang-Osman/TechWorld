@@ -19,7 +19,10 @@ export default async function MessageComponentPage() {
         <h1>Message Component</h1>
       </Gutter>
       <Gutter>
-        <VerticalPadding bottom='large' top='none'>
+        <VerticalPadding
+          bottom='large'
+          top='none'
+        >
           <Message message='This is a message' />
           <br />
           <Message error='This is an error' />

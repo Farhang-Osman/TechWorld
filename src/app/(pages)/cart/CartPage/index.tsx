@@ -82,7 +82,10 @@ export const CartPage: React.FC<{
                   return (
                     <Fragment key={index}>
                       <div className={classes.row}>
-                        <Link href={`/products/${product.slug}`} className={classes.mediaWrapper}>
+                        <Link
+                          href={`/products/${product.slug}`}
+                          className={classes.mediaWrapper}
+                        >
                           {!metaImage && <span className={classes.placeholder}>No image</span>}
                           {metaImage && typeof metaImage !== 'string' && (
                             <Media
@@ -108,7 +111,10 @@ export const CartPage: React.FC<{
                             </p>
                           )}
                           <h5 className={classes.title}>
-                            <Link href={`/products/${product.slug}`} className={classes.titleLink}>
+                            <Link
+                              href={`/products/${product.slug}`}
+                              className={classes.titleLink}
+                            >
                               {title}
                             </Link>
                           </h5>
@@ -131,7 +137,11 @@ export const CartPage: React.FC<{
                             </label>
                             <RemoveFromCartButton product={product} />
                           </div>
-                          <Price product={product} button={false} quantity={quantity} />
+                          <Price
+                            product={product}
+                            button={false}
+                            quantity={quantity}
+                          />
                         </div>
                       </div>
                       {!isLast && <HR />}

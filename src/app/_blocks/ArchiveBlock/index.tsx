@@ -25,7 +25,10 @@ export const ArchiveBlock: React.FC<
   } = props
 
   return (
-    <div id={`block-${id}`} className={classes.archiveBlock}>
+    <div
+      id={`block-${id}`}
+      className={classes.archiveBlock}
+    >
       {introContent && (
         <Gutter className={classes.introContent}>
           <RichText content={introContent} />

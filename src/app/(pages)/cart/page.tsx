@@ -88,7 +88,10 @@ export default async function Cart() {
       )}
       <Hero {...page?.hero} />
       <Gutter>
-        <CartPage settings={settings} page={page} />
+        <CartPage
+          settings={settings}
+          page={page}
+        />
       </Gutter>
       <Blocks blocks={page?.layout} />
     </Fragment>

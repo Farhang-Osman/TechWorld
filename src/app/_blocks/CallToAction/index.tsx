@@ -24,11 +24,20 @@ export const CallToActionBlock: React.FC<
       >
         <div className={classes.wrap}>
           <div className={classes.content}>
-            <RichText className={classes.richText} content={richText} />
+            <RichText
+              className={classes.richText}
+              content={richText}
+            />
           </div>
           <div className={classes.linkGroup}>
             {(links || []).map(({ link }, i) => {
-              return <CMSLink key={i} {...link} invert={invertBackground} />
+              return (
+                <CMSLink
+                  key={i}
+                  {...link}
+                  invert={invertBackground}
+                />
+              )
             })}
           </div>
         </div>

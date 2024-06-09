@@ -14,13 +14,19 @@ export const MediumImpactHero: React.FC<Page['hero']> = props => {
   return (
     <Gutter className={classes.hero}>
       <div className={classes.background}>
-        <RichText className={classes.richText} content={richText} />
+        <RichText
+          className={classes.richText}
+          content={richText}
+        />
         {Array.isArray(links) && (
           <ul className={classes.links}>
             {links.map(({ link }, i) => {
               return (
                 <li key={i}>
-                  <CMSLink className={classes.link} {...link} />
+                  <CMSLink
+                    className={classes.link}
+                    {...link}
+                  />
                 </li>
               )
             })}
@@ -28,7 +34,12 @@ export const MediumImpactHero: React.FC<Page['hero']> = props => {
         )}
       </div>
       <div className={classes.media}>
-        {typeof media === 'object' && <Media className={classes.media} resource={media} />}
+        {typeof media === 'object' && (
+          <Media
+            className={classes.media}
+            resource={media}
+          />
+        )}
       </div>
     </Gutter>
   )

@@ -40,7 +40,10 @@ const serialize = (children?: Children): React.ReactNode[] =>
 
       if (node.underline) {
         text = (
-          <span style={{ textDecoration: 'underline' }} key={i}>
+          <span
+            style={{ textDecoration: 'underline' }}
+            key={i}
+          >
             {text}
           </span>
         )
@@ -48,7 +51,10 @@ const serialize = (children?: Children): React.ReactNode[] =>
 
       if (node.strikethrough) {
         text = (
-          <span style={{ textDecoration: 'line-through' }} key={i}>
+          <span
+            style={{ textDecoration: 'line-through' }}
+            key={i}
+          >
             {text}
           </span>
         )

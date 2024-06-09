@@ -72,7 +72,10 @@ export const Price: React.FC<{
         </div>
       )}
       {button && button === 'addToCart' && (
-        <AddToCartButton product={product} appearance='default' />
+        <AddToCartButton
+          product={product}
+          appearance='default'
+        />
       )}
       {button && button === 'removeFromCart' && <RemoveFromCartButton product={product} />}
     </div>
