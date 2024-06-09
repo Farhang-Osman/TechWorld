@@ -24,6 +24,7 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {user && <Link href='/account'>Account</Link>}
       {!user && (
         <Button
+          className='rounded-lg'
           el='link'
           href='login'
           label='login'

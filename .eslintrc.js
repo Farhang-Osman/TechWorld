@@ -11,6 +11,7 @@ module.exports = {
       {
         endOfLine: 'auto',
         jsxSingleQuote: true,
+        singleAttributePerLine: true,
       },
     ],
     'no-console': 'off',

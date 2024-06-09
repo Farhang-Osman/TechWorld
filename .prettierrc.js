@@ -6,4 +6,5 @@ module.exports = {
   trailingComma: 'all',
   arrowParens: 'avoid',
   jsxSingleQuote: true,
+  singleAttributePerLine: true,
 }
