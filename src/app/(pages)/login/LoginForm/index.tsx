@@ -49,11 +49,6 @@ const LoginForm: React.FC = () => {
       onSubmit={handleSubmit(onSubmit)}
       className={classes.form}
     >
-      <p>
-        {`This is where your customers will login to manage their account, review their order history, and more. To manage all users, `}
-        <Link href='/admin/collections/users'>login to the admin dashboard</Link>
-        {'.'}
-      </p>
       <Message
         error={error}
         className={classes.message}
