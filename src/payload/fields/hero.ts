@@ -22,6 +22,10 @@ export const hero: Field = {
           value: 'none',
         },
         {
+          label: 'Custom Hero',
+          value: 'customHero',
+        },
+        {
           label: 'High Impact',
           value: 'highImpact',
         },
@@ -52,7 +56,8 @@ export const hero: Field = {
       relationTo: 'media',
       required: true,
       admin: {
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
+        condition: (_, { type } = {}) =>
+          ['customHero', 'highImpact', 'mediumImpact'].includes(type),
       },
     },
   ],
