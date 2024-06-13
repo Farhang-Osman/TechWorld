@@ -73,6 +73,7 @@ type Page_Hero {
 
 enum Page_Hero_type {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact
@@ -1745,6 +1746,7 @@ input Page_hero__type_operator {
 
 enum Page_hero__type_Input {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact
@@ -2668,6 +2670,7 @@ type PageVersion_Version_Hero {
 
 enum PageVersion_Version_Hero_type {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact
@@ -3371,6 +3374,7 @@ input versionsPage_version__hero__type_operator {
 
 enum versionsPage_version__hero__type_Input {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact
@@ -12133,6 +12137,7 @@ input mutationPage_HeroInput {
 
 enum Page_Hero_type_MutationInput {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact
@@ -12200,6 +12205,7 @@ input mutationPageUpdate_HeroInput {
 
 enum PageUpdate_Hero_type_MutationInput {
   none
+  customHero
   highImpact
   mediumImpact
   lowImpact

@@ -7,7 +7,7 @@ import { LowImpactHero } from '../../_heros/LowImpact'
 import { MediumImpactHero } from '../../_heros/MediumImpact'
 
 const heroes = {
-  CustomHero: CustomHero,
+  customHero: CustomHero,
   highImpact: HighImpactHero,
   mediumImpact: MediumImpactHero,
   lowImpact: LowImpactHero,

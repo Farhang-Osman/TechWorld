@@ -8,7 +8,7 @@ import RichText from '../../_components/RichText'
 
 export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) => {
   return (
-    <Gutter className=''>
+    <Gutter className='flex h-full'>
       <div className=''>
         <RichText content={richText} />
         {Array.isArray(links) && links.length > 0 && (
