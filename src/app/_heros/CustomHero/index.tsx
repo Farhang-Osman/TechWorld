@@ -7,22 +7,34 @@ import { Media } from '../../_components/Media'
 import RichText from '../../_components/RichText'
 
 export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) => {
+  const mediaUrl =
+    media &&
+    typeof media !== 'string' &&
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${media.filename}`
+
   return (
-    <Gutter className='flex h-full'>
-      <div className=''>
+    <section className='flex h-full'>
+      <div style={{ backgroundImage: `url(${mediaUrl})` }}>
         <RichText content={richText} />
         {Array.isArray(links) && links.length > 0 && (
           <ul className=''>
             {links.map(({ link }, i) => {
               return (
-                <li key={i}>
-                  <CMSLink {...link} />
+                <li
+                  key={i}
+                  className='list-none'
+                >
+                  <CMSLink
+                    {...link}
+                    className='rounded-lg'
+                  />
                 </li>
               )
             })}
           </ul>
         )}
       </div>
+
       <div className=''>
         {typeof media === 'object' && (
           <Fragment>
@@ -41,6 +53,6 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
           </Fragment>
         )}
       </div>
-    </Gutter>
+    </section>
   )
 }

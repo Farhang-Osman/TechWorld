@@ -66,7 +66,7 @@ export interface Page {
           id?: string | null;
         }[]
       | null;
-    media?: number | Media | null;
+    media?: string | Media | null;
   };
   layout: (
     | {
