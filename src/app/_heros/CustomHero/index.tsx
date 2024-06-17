@@ -14,7 +14,10 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
 
   return (
     <section className='flex h-full'>
-      <div style={{ backgroundImage: `url(${mediaUrl})` }}>
+      <div
+        className='w-full bg-cover'
+        style={{ backgroundImage: `url(${mediaUrl})` }}
+      >
         <RichText content={richText} />
         {Array.isArray(links) && links.length > 0 && (
           <ul className=''>
