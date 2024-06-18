@@ -6,6 +6,8 @@ import { CMSLink } from '../../_components/Link'
 import { Media } from '../../_components/Media'
 import RichText from '../../_components/RichText'
 
+import classes from './index.module.scss'
+
 export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) => {
   const mediaUrl =
     media &&
@@ -13,48 +15,29 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
     `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${media.filename}`
 
   return (
-    <section className='flex h-full'>
+    <section className={classes.hero}>
       <div
-        className='w-full bg-cover'
+        className={classes.heroWrapper}
         style={{ backgroundImage: `url(${mediaUrl})` }}
       >
-        <RichText content={richText} />
-        {Array.isArray(links) && links.length > 0 && (
-          <ul className=''>
-            {links.map(({ link }, i) => {
-              return (
-                <li
-                  key={i}
-                  className='list-none'
-                >
-                  <CMSLink
-                    {...link}
-                    className='rounded-lg'
-                  />
-                </li>
-              )
-            })}
-          </ul>
-        )}
-      </div>
+        <div className={classes.heroTextBox}>
+          <RichText content={richText} />
 
-      <div className=''>
-        {typeof media === 'object' && (
-          <Fragment>
-            <Media
-              resource={media}
-              // fill
-              imgClassName=''
-              priority
-            />
-            {media?.caption && (
-              <RichText
-                content={media.caption}
-                className=''
-              />
-            )}
-          </Fragment>
-        )}
+          {Array.isArray(links) && links.length > 0 && (
+            <ul className={classes.links}>
+              {links.map(({ link }, i) => {
+                return (
+                  <li key={i}>
+                    <CMSLink
+                      {...link}
+                      className='rounded-lg'
+                    />
+                  </li>
+                )
+              })}
+            </ul>
+          )}
+        </div>
       </div>
     </section>
   )
