@@ -56,7 +56,7 @@ export interface Page {
             newTab?: boolean | null;
             reference?: {
               relationTo: 'pages';
-              value: string | Page;
+              value: string | Page | number;
             } | null;
             url?: string | null;
             label: string;
@@ -66,7 +66,7 @@ export interface Page {
           id?: string | null;
         }[]
       | null;
-    media?: string | Media | null;
+    media?: string | number | Media | null;
   };
   layout: (
     | {
@@ -197,7 +197,7 @@ export interface Media {
 export interface Category {
   id: number;
   title?: string | null;
-  media?: string | Media  | null;
+  media?: number | Media | null;
   parent?: (number | null) | Category;
   breadcrumbs?:
     | {
