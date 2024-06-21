@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.2.0...v1.3.0) (2024-06-21)
+
+
+### Features
+
+* add CustomHero ([2b0000a](https://github.com/Farhang-Osman/TechWorld/commit/2b0000a74ccf3c22facb91b825789e7beac925c5))
+* generate graphQLSchema and fix a bug ([052ba8a](https://github.com/Farhang-Osman/TechWorld/commit/052ba8ac010028b89e0fe261ca55bd45cc53ca55))
+* modified CreateAccountForm ([b95b0c4](https://github.com/Farhang-Osman/TechWorld/commit/b95b0c48f5d84ed31d8d8e6266a5bd81e241f8cc))
+* modified login ([d513d49](https://github.com/Farhang-Osman/TechWorld/commit/d513d49c3dc7bd687fbc0dffebb18ebef8cd071d))
+* modified RecoverPasswordForm ([9df0944](https://github.com/Farhang-Osman/TechWorld/commit/9df0944ec248b6dbeb505eb6c5f86d4fa12aceb7))
+
+
+### Bug Fixes
+
+* add Categories and CategoryCard folder ([237dab3](https://github.com/Farhang-Osman/TechWorld/commit/237dab3b5941aeb9cfb272a5a97a162ebd0181bd))
+* add properties for Category ([fdf789d](https://github.com/Farhang-Osman/TechWorld/commit/fdf789d09555ec485bdf081769e727c9ab4b43fb))
+* add properties to fetchDocs and categories ([c8d2644](https://github.com/Farhang-Osman/TechWorld/commit/c8d2644cad47f5e241fa6ee279f7d80f082a4041))
+* **error:** fix an error and add some style ([7e22aa7](https://github.com/Farhang-Osman/TechWorld/commit/7e22aa7cfe5809dfcad046a2406b38d7e526579c))
+* fix a bug by changing payload-types of Page ([535a601](https://github.com/Farhang-Osman/TechWorld/commit/535a60178e383c05962f8d070542ee3584187ffd))
+* generate types and graphQLSchema ([5d1203f](https://github.com/Farhang-Osman/TechWorld/commit/5d1203f304b2cee56f5b59910ca978af1ddc2265))
+
 ## [1.2.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.1.1...v1.2.0) (2024-06-11)
 
 
