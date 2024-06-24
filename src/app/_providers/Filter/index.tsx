@@ -4,7 +4,7 @@ import { createContext, ReactNode, SetStateAction, useContext, useState } from '
 
 interface IContextType {
   categoryFilters: string[]
-  setCategoryFilters: React.Dispatch<SetStateAction<string[] | number[]>>
+  setCategoryFilters: React.Dispatch<SetStateAction<string[]>>
   sort: string
   setSort: React.Dispatch<SetStateAction<string>>
 }
