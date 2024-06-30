@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.3.0...v1.4.0) (2024-06-30)
+
+
+### Features
+
+* add Filter section ([dc54f0b](https://github.com/Farhang-Osman/TechWorld/commit/dc54f0b081dd4a6ff55a944ca14f891cccb9215c))
+* add product details page ([98fb764](https://github.com/Farhang-Osman/TechWorld/commit/98fb7648ffec5811cee5d38f2a17f5d65d36a4b8))
+* Add products section ([eec37ab](https://github.com/Farhang-Osman/TechWorld/commit/eec37ab075959b37820af4c9d5d317b1a7d18b3d))
+
 ## [1.3.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.2.0...v1.3.0) (2024-06-21)
 
 
