@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.4.0...v1.5.0) (2024-07-28)
+
+
+### Features
+
+* add cart page ([5593646](https://github.com/Farhang-Osman/TechWorld/commit/5593646deb921fdb4e0d357122e119d2c45f9bbb))
+* add related products ([dc1f158](https://github.com/Farhang-Osman/TechWorld/commit/dc1f1588bcdd770752ff634035276d73e043066c))
+
 ## [1.4.0](https://github.com/Farhang-Osman/TechWorld/compare/v1.3.0...v1.4.0) (2024-06-30)
 
 
